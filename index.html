@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 10.0.0a2" />
+<meta name="generator" content="AsciiDoc 9.0.0" />
 <meta name="description" content="AsciiDoc is a text document format for writing notes,  documentation, articles, books, ebooks, slideshows,    web pages, man pages and blogs.  AsciiDoc files can be translated to many formats including HTML, PDF, EPUB,  man page." />
 <meta name="keywords" content="AsciiDoc, DocBook, EPUB, PDF, ebooks, slideshow, slidy, man page" />
 <title>AsciiDoc Home Page</title>
@@ -52,7 +52,7 @@ asciidoc.install(1);
 <div class="sectionbody">
 <div class="sidebarblock">
 <div class="content">
-<div class="title">08 February 2021: AsciiDoc 9.1.0 Released</div>
+<div class="title">02 June 2020: AsciiDoc 9.0.0 Released</div>
 <div class="paragraph"><p>Read the <a href="CHANGELOG.html">CHANGELOG</a> for release highlights and a
 full list of all additions, changes and bug fixes. Changes are
 documented in the updated <a href="userguide.html">User Guide</a>. See the
@@ -65,16 +65,10 @@ installation instructions.</p></div>
 <h2 id="_introduction">Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>AsciiDoc is a text document format for writing notes,  documentation, articles, books, ebooks, slideshows,    web pages, man pages and blogs.  AsciiDoc files can be translated to many formats including HTML, PDF, EPUB,  man page.</p></div>
-<div class="paragraph"><p>AsciiDoc.py is a legacy processor for this syntax, handling an older
-rendition of AsciiDoc. As such, this will not properly handle the
-<a href="https://projects.eclipse.org/projects/technology.asciidoc">current AsciiDoc specification</a>.
-It is suggested that unless you specifically require the AsciiDoc.py
-toolchain, you should find a processor that handles the modern AsciiDoc
-syntax.</p></div>
-<div class="paragraph"><p>AsciiDoc.py is highly configurable: both the AsciiDoc source file syntax
+<div class="paragraph"><p>AsciiDoc is highly configurable: both the AsciiDoc source file syntax
 and the backend output markups (which can be almost any type of
 SGML/XML markup) can be customized and extended by the user.</p></div>
-<div class="paragraph"><p>AsciiDoc.py is free software and is licensed under the terms of the <em>GNU
+<div class="paragraph"><p>AsciiDoc is free software and is licensed under the terms of the <em>GNU
 General Public License version 2</em> (GPLv2).</p></div>
 <div class="admonitionblock">
 <table><tr>
@@ -206,7 +200,7 @@ Stylesheets.</p></div>
 </div>
 <div class="sect2">
 <h3 id="X8">Example Slideshows</h3>
-<div class="paragraph"><p>The <a href="https://www.w3.org/Talks/Tools/Slidy2/">Slidy</a> backend generates
+<div class="paragraph"><p>The <a href="http://www.w3.org/Talks/Tools/Slidy2/">Slidy</a> backend generates
 HTML slideshows that can be viewed in any web browser.  What&#8217;s nice is
 that you can create completely self contained slideshows including
 embedded images.</p></div>
@@ -252,7 +246,7 @@ Example <a href="newtables.html">Tables</a>.
 <h2 id="_ebook_publication">eBook Publication</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>The two most popular open eBook formats are
-<a href="https://en.wikipedia.org/wiki/EPUB">EPUB</a> and PDF.
+<a href="http://en.wikipedia.org/wiki/EPUB">EPUB</a> and PDF.
 The AsciiDoc <a href="a2x.1.html">a2x</a> toolchain wrapper makes it easy to
 <a href="publishing-ebooks-with-asciidoc.html">publish EPUB and PDF eBooks
 with AsciiDoc</a>. See also <a href="#X7">example books</a> and
@@ -262,9 +256,9 @@ with AsciiDoc</a>. See also <a href="#X7">example books</a> and
 <div class="sect1">
 <h2 id="_blogpost_weblog_client">Blogpost weblog client</h2>
 <div class="sectionbody">
-<div class="paragraph"><p><a href="https://srackham.wordpress.com/blogpost-readme/">blogpost</a> is a
+<div class="paragraph"><p><a href="http://srackham.wordpress.com/blogpost-readme/">blogpost</a> is a
 command-line weblog client for publishing AsciiDoc documents to
-<a href="https://wordpress.org/">WordPress</a> blog hosts. It creates and updates
+<a href="http://wordpress.org/">WordPress</a> blog hosts. It creates and updates
 weblog posts and pages directly from AsciiDoc source documents.</p></div>
 </div>
 </div>
@@ -273,16 +267,16 @@ weblog posts and pages directly from AsciiDoc source documents.</p></div>
 <div class="sectionbody">
 <div class="paragraph"><p>AsciiDoc includes a <a href="source-highlight-filter.html">source code
 highlighter filter</a> that uses
-<a href="https://www.gnu.org/software/src-highlite/">GNU source-highlight</a> to
+<a href="http://www.gnu.org/software/src-highlite/">GNU source-highlight</a> to
 highlight HTML outputs. You also have the option of using the
-<a href="https://pygments.org/">Pygments</a> highlighter.</p></div>
+<a href="http://pygments.org/">Pygments</a> highlighter.</p></div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="X3">Mathematical Formulae</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>You can include mathematical formulae in AsciiDoc XHTML documents using
-<a href="asciimath.html">ASCIIMath</a> or <a href="latexmathml.html">LaTeXMathML</a>
+<a href="asciimathml.html">ASCIIMathML</a> or <a href="latexmathml.html">LaTeXMathML</a>
 notation.</p></div>
 <div class="paragraph"><p>The <a href="latex-filter.html">AsciiDoc LaTeX filter</a> translates LaTeX
 source to an image that is automatically inserted into the AsciiDoc
@@ -313,14 +307,14 @@ An AsciiDoc syntax highlighter for the Vim text editor is included in Vim.
 <p>
 Dag Wieers has implemented an alternative Vim syntax file for
   AsciiDoc which can be found here
-  <a href="https://github.com/dagwieers/asciidoc-vim">https://github.com/dagwieers/asciidoc-vim</a>.
+  <a href="http://svn.rpmforge.net/svn/trunk/tools/asciidoc-vim/">http://svn.rpmforge.net/svn/trunk/tools/asciidoc-vim/</a>.
 </p>
 </li>
 <li>
 <p>
 David Avsajanishvili has written a source highlighter for AsciiDoc
-  files for <a href="https://wiki.gnome.org/Projects/GtkSourceView">GtkSourceView</a>
-  (used by <a href="https://wiki.gnome.org/Apps/Gedit">gedit</a> and a number of
+  files for <a href="http://projects.gnome.org/gtksourceview/">GtkSourceView</a>
+  (used by <a href="http://projects.gnome.org/gedit/">gedit</a> and a number of
   other applications). The project is hosted here:
   <a href="https://launchpad.net/asciidoc-gtk-highlight">https://launchpad.net/asciidoc-gtk-highlight</a>
 </p>
@@ -328,8 +322,8 @@ David Avsajanishvili has written a source highlighter for AsciiDoc
 <li>
 <p>
 AsciiDoc resources for the Emacs editor can be found on the
-  <a href="https://www.emacswiki.org/emacs/AsciiDoc">AsciiDoc  page</a> at the
-  <a href="https://www.emacswiki.org/emacs/EmacsWiki">Emacs Wiki</a>.
+  <a href="http://www.emacswiki.org/emacs/AsciiDoc">AsciiDoc  page</a> at the
+  <a href="http://www.emacswiki.org/emacs/EmacsWiki">Emacs Wiki</a>.
 </p>
 </li>
 <li>
@@ -346,9 +340,9 @@ Christian Zuckschwerdt has written a
 <h2 id="_try_asciidoc_on_the_web">Try AsciiDoc on the Web</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Thaddée Tyl has written an online live editor named
-<a href="https://espadrine.github.io/AsciiDocBox/">AsciiDocBox</a> to try AsciiDoc in
+<a href="http://espadrine.github.io/AsciiDocBox/">AsciiDocBox</a> to try AsciiDoc in
 your browser.</p></div>
-<div class="paragraph"><p>You can use <a href="https://gist.asciidoctor.org/">DocGist</a> to preview AsciiDoc
+<div class="paragraph"><p>You can use <a href="http://gist.asciidoctor.org/">DocGist</a> to preview AsciiDoc
 files hosted on GitHub, Dropbox, and other services. DocGist also
 features a real-time collaboration mode.</p></div>
 </div>
@@ -356,8 +350,8 @@ features a real-time collaboration mode.</p></div>
 <div class="sect1">
 <h2 id="X2">External Resources and Applications</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>Here are various useful resources, feel free to open a pull request to
-add additional ones:</p></div>
+<div class="paragraph"><p>Here are resources that I know of, if you know of more drop me a line
+and I&#8217;ll add them to the list.</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -367,7 +361,7 @@ Check the <a href="INSTALL.html#X2">installation page</a> for packaged versions
 </li>
 <li>
 <p>
-<a href="https://asciidoctor.org/">Asciidoctor</a> provides a modern, compliant, and
+<a href="http://asciidoctor.org">Asciidoctor</a> provides a modern, compliant, and
   substantially faster implementation of the AsciiDoc processor written
   in Ruby. This implementation can also be run on the JVM (with
   AsciidoctorJ) or using JavaScript (with Asciidoctor.js). The
@@ -378,13 +372,33 @@ Check the <a href="INSTALL.html#X2">installation page</a> for packaged versions
 <li>
 <p>
 Alex Efros has written an HTML formatted
-  <a href="https://powerman.name/doc/asciidoc">AsciiDoc Cheatsheet</a> using AsciiDoc.
+  <a href="http://powerman.name/doc/asciidoc">AsciiDoc Cheatsheet</a> using AsciiDoc.
   The Asciidoctor project also provides a comprehensive
-  <a href="https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/">AsciiDoc
-  syntax quick reference</a>. However, the syntax supported by Asciidoctor differs
-  slightly, see
-  <a href="https://docs.asciidoctor.org/asciidoctor/latest/migrate/asciidoc-py/#updated-and-deprecated-asciidoc-syntax">this page</a>
-  for more details.
+  <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/">AsciiDoc
+  syntax quick reference</a>.
+</p>
+</li>
+<li>
+<p>
+Thomas Berker has written an
+  <a href="http://liksom.info/blog/?q=node/114">AsciiDoc Cheatsheet</a> in Open
+  Document and PDF formats.
+</p>
+</li>
+<li>
+<p>
+The <a href="http://www.wikimatrix.org/">WikiMatrix</a> website has an excellent
+  <a href="http://www.wikimatrix.org/syntax.php">web page</a> that compares the
+  various Wiki markup syntaxes. An interesting attempt at Wiki markup
+  standardization is <a href="http://www.wikicreole.org/">CREOLE</a>.
+</p>
+</li>
+<li>
+<p>
+Franck Pommereau has written
+  <a href="http://www.univ-paris12.fr/lacl/pommereau/soft/asciidoctest.html">Asciidoctest</a>,
+  a program that doctests snippets of Python code within your Asciidoc
+  documents.
 </p>
 </li>
 <li>
@@ -413,7 +427,9 @@ Karl Mowatt-Wilson has developed an <a href="http://ikiwiki.info/">ikiwiki</a>
 <p>
 Glenn Eychaner has
   <a href="http://groups.google.com/group/asciidoc/browse_thread/thread/bf04b55628efe214">reworked
-  the Asciidoc plugin for ikiwiki</a> that was created by Karl Mowson.
+  the Asciidoc plugin for ikiwiki</a> that was created by Karl Mowson,
+  the source can be downloaded from
+  <a href="http://dl.dropbox.com/u/11256359/asciidoc.pm">http://dl.dropbox.com/u/11256359/asciidoc.pm</a>
 </p>
 </li>
 <li>
@@ -429,12 +445,29 @@ David Hajage has written an AsciiDoc package for the
 </li>
 <li>
 <p>
+Pascal Rapaz has written a Python script to automate AsciiDoc
+  website generation. You can find it at
+  <a href="http://www.rapazp.ch/opensource/tools/asciidoc.html">http://www.rapazp.ch/opensource/tools/asciidoc.html</a>.
+</p>
+</li>
+<li>
+<p>
 Jared Henley has written
-  <a href="https://jared.henley.id.au/software/awb/">AsciiDoc
-  Website Builder</a>. <em>AsciiDoc Website Builder</em> (awb) is a Python
+  <a href="http://jared.henley.id.au/software/awb/documentation.html">AsciiDoc
+  Website Builder</a>. <em>AsciiDoc Website Builder</em> (awb) is a python
   program that automates the building of of a website written in
   AsciiDoc. All you need to write is the AsciiDoc source plus a few
   simple configuration files.
+</p>
+</li>
+<li>
+<p>
+Brad Adkins has written
+  <a href="http://dbixjcl.org/jcl/asciidocgen/asciidocgen.html">AsciiDocGen</a>, a
+  web site generation and deployment tool that allows you write your
+  web site content in AsciiDoc. The
+  <a href="http://dbixjcl.org/jcl/asciidocgen/asciidocgen.html">AsciiDocGen web
+  site</a> is managed using <em>AsciiDocGen</em>.
 </p>
 </li>
 <li>
@@ -446,29 +479,30 @@ Filippo Negroni has developed a set of tools to facilitate <em>literate
 </li>
 <li>
 <p>
-<a href="https://vanderwijk.info/">Ivo&#8217;s blog</a> describes a
-  <a href="https://ditaa.sourceforge.net/">ditaa</a> filter for AsciiDoc which converts
-  <a href="https://en.wikipedia.org/wiki/ASCII_art">ASCII art</a> into graphics.
+<a href="http://vanderwijk.info/2009/4/23/full-text-based-document-generation-using-asciidoc-and-ditaa">Ivo&#8217;s
+  blog</a> describes a <a href="http://ditaa.sourceforge.net/">ditaa</a> filter for
+  AsciiDoc which converts <a href="http://en.wikipedia.org/wiki/ASCII_art">ASCII
+  art</a> into graphics.
 </p>
 </li>
 <li>
 <p>
-<a href="https://github.com/gollum/gollum">Gollum</a> is a git-powered wiki, it
+<a href="http://github.com/github/gollum">Gollum</a> is a git-powered wiki, it
   supports various formats, including AsciiDoc.
 </p>
 </li>
 <li>
 <p>
 Gregory Romé has written an
-  <a href="https://github.com/gpr/redmine_asciidoc_formatter">AsciiDoc plugin</a>
-  for the <a href="https://www.redmine.org/">Redmine</a> project management
+  <a href="http://github.com/gpr/redmine_asciidoc_formatter">AsciiDoc plugin</a>
+  for the <a href="http://www.redmine.org/">Redmine</a> project management
   application.
 </p>
 </li>
 <li>
 <p>
 Paul Hsu has started a
-  <a href="https://github.com/paulhsu/AsciiDoc.CHT.userguide">Chinese translation
+  <a href="http://github.com/paulhsu/AsciiDoc.CHT.userguide">Chinese translation
   of the AsciiDoc User Guide</a>.
 </p>
 </li>
@@ -481,16 +515,34 @@ Dag Wieers has written
 </li>
 <li>
 <p>
-Ed Keith has written
-  <a href="https://sourceforge.net/projects/codeextactor.berlios/">Code Extractor</a>,
-  it extracts code snippets from source code files and
+Ed Keith has written <a href="http://codeextactor.berlios.de/">Code
+  Extractor</a>, it extracts code snippets from source code files and
   inserts them into AsciiDoc documents.
 </p>
 </li>
 <li>
 <p>
+The <a href="http://csrp.iut-blagnac.fr/jmiwebsite/home/">JMI website</a> hosts
+  a number of extras for AsciiDoc and Slidy written by Jean-Michel
+  Inglebert.
+</p>
+</li>
+<li>
+<p>
 Ryan Tomayko has written an number of
-  <a href="https://github.com/rtomayko/adoc-themes">themes for AsciiDoc</a>.
+  <a href="http://tomayko.com/src/adoc-themes/">themes for AsciiDoc</a> along with
+  a <a href="http://tomayko.com/src/adoc-themes/hacking.html">script for
+  combining the CSS files</a> into single CSS theme files for AsciiDoc
+  embedded CSS documents.
+</p>
+</li>
+<li>
+<p>
+Ilya Portnov has written a
+  <a href="https://gitorious.org/doc-building-system">document building system
+  for AsciiDoc</a>, here is
+  <a href="http://iportnov.blogspot.com/2011/03/asciidoc-beamer.html">short
+  article in Russian</a> describing it.
 </p>
 </li>
 <li>
@@ -502,9 +554,9 @@ Lex Trotman has written
 </li>
 <li>
 <p>
-Qingping Hou has written <a href="https://houqp.github.io/asciidoc-deckjs/">an
+Qingping Hou has written <a href="http://houqp.github.com/asciidoc-deckjs/">an
   AsciiDoc backend for deck.js</a>.
-  <a href="http://imakewebthings.com/deck.js/">deck.js</a> is a JavaScript
+  <a href="http://imakewebthings.github.com/deck.js/">deck.js</a> is a JavaScript
   library for building modern HTML presentations (slideshows).
 </p>
 </li>
@@ -525,8 +577,8 @@ Lex Trotman has written
 <li>
 <p>
 Michael Haberler has created a
-  <a href="https://code.google.com/archive/p/asciidoc-diag-filter/">blockdiag filter
-  for AsciiDoc</a> which embeds <a href="http://blockdiag.com/en/">blockdiag</a> images in
+  <a href="https://code.google.com/p/asciidoc-diag-filter/">blockdiag filter for
+  Asciidoc</a> which embeds <a href="http://blockdiag.com/">blockdiag</a> images in
   AsciiDoc documents.
 </p>
 </li>
@@ -559,7 +611,7 @@ Eduardo Santana has written an
 </li>
 <li>
 <p>
-<a href="https://www.geany.org/">Geany</a> 1.23 adds document structure support
+<a href="http://www.geany.org/">Geany</a> 1.23 adds document structure support
   for AsciiDoc.
 </p>
 </li>
@@ -583,17 +635,16 @@ The book <a href="http://practicalunittesting.com/">Practical Unit Testing</a> b
 </li>
 <li>
 <p>
-The book
-  <a href="https://www.oreilly.com/library/view/programming-ios-4/9781449397302/">Programming iOS 4</a>
+The book <a href="http://oreilly.com/catalog/9781449397296">Programming iOS 4</a>
   by Matt Neuburg was written using AsciiDoc. Matt has
-  <a href="https://www.apeth.net/matt/iosbooktoolchain.html">written an article</a>
+  <a href="http://www.apeth.net/matt/iosbooktoolchain.html">written an article</a>
   describing how he used AsciiDoc and other tools to write the book.
 </p>
 </li>
 <li>
 <p>
 The book
-  <a href="https://www.oreilly.com/library/view/programming-scala/9780596801908/">Programming
+  <a href="http://oreilly.com/catalog/9780596155957/index.html">Programming
   Scala</a> by Dean Wampler and Alex Payne (O&#8217;Reilly) was
   <a href="http://groups.google.com/group/asciidoc/browse_frm/thread/449f1199343f0e27">written
   using Asciidoc</a>.
@@ -601,16 +652,24 @@ The book
 </li>
 <li>
 <p>
+The <a href="http://www.ncfaculty.net/dogle/fishR/index.html">fishR</a> website
+  has a number of
+  <a href="http://www.ncfaculty.net/dogle/fishR/bookex/AIFFD/AIFFD.html">book
+  examples</a> written using AsciiDoc.
+</p>
+</li>
+<li>
+<p>
 The Neo4j graph database project uses Asciidoc, and the output is
-  published here: <a href="https://neo4j.com/docs/">https://neo4j.com/docs/</a>. The build process includes
+  published here: <a href="http://docs.neo4j.org/">http://docs.neo4j.org/</a>. The build process includes
   live tested source code snippets and is described
   <a href="http://groups.google.com/group/asciidoc/browse_thread/thread/49d570062fd3ff52">here</a>.
 </p>
 </li>
 <li>
 <p>
-<a href="https://frugalware.org/">Frugalware Linux</a> uses AsciiDoc for
-  <a href="https://frugalware.org/docs">documentation</a>.
+<a href="http://frugalware.org/">Frugalware Linux</a> uses AsciiDoc for
+  <a href="http://frugalware.org/docs">documentation</a>.
 </p>
 </li>
 <li>
@@ -637,7 +696,7 @@ discussion group thread</a> for details.</p></div>
 <li>
 <p>
 The
-  <a href="https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html">Git
+  <a href="http://www.kernel.org/pub/software/scm/git/docs/user-manual.html">Git
   User&#8217;s Manual</a>.
 </p>
 </li>
@@ -645,26 +704,32 @@ The
 <p>
 <em>Git Magic</em><br />
   <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/">http://www-cs-students.stanford.edu/~blynn/gitmagic/</a><br />
-  <a href="https://github.com/blynn/gitmagic">https://github.com/blynn/gitmagic</a>
+  <a href="http://github.com/blynn/gitmagic/tree/1e5780f658962f8f9b01638059b27275cfda095c">http://github.com/blynn/gitmagic/tree/1e5780f658962f8f9b01638059b27275cfda095c</a>
 </p>
 </li>
 <li>
 <p>
 <em>CouchDB: The Definitive Guide</em><br />
-  <a href="https://docs.couchdb.org/en/stable/">https://docs.couchdb.org/en/stable/</a><br />
-  <a href="https://groups.google.com/g/asciidoc/c/pg9ny7r4Yqo">https://groups.google.com/g/asciidoc/c/pg9ny7r4Yqo</a>
+  <a href="http://books.couchdb.org/relax/">http://books.couchdb.org/relax/</a><br />
+  <a href="http://groups.google.com/group/asciidoc/browse_thread/thread/a60f67cbbaf862aa/d214bf7fa2d538c4?lnk=gst&amp;q=book#d214bf7fa2d538c4">http://groups.google.com/group/asciidoc/browse_thread/thread/a60f67cbbaf862aa/d214bf7fa2d538c4?lnk=gst&amp;q=book#d214bf7fa2d538c4</a>
 </p>
 </li>
 <li>
 <p>
 <em>Ramaze Manual</em><br />
   <a href="http://book.ramaze.net/">http://book.ramaze.net/</a><br />
-  <a href="http://github.com/manveru/ramaze-book">http://github.com/manveru/ramaze-book</a>
+  <a href="http://github.com/manveru/ramaze-book/tree/master">http://github.com/manveru/ramaze-book/tree/master</a>
 </p>
 </li>
 <li>
 <p>
-The <a href="https://github.com/manveru/KirbyBase">KirbyBase for Ruby</a>
+Some documentation about git by Nico Schottelius (in German)
+  <a href="http://nico.schotteli.us/papers/linux/git-firmen/">http://nico.schotteli.us/papers/linux/git-firmen/</a>.
+</p>
+</li>
+<li>
+<p>
+The <a href="http://www.netpromi.com/kirbybase_ruby.html">KirbyBase for Ruby</a>
   database management system manual.
 </p>
 </li>
@@ -684,28 +749,35 @@ The <a href="http://www.wesnoth.org/">Battle for Wesnoth</a> project uses
 <li>
 <p>
 Troy Hanson uses AsciiDoc to generate user guides for the
-  <a href="https://troydhanson.github.io/tpl/index.html">tpl</a> and
-  <a href="https://troydhanson.github.io/uthash/index.html">uthash</a> projects
-  (the HTML versions have a customised contents sidebar).
+  <a href="http://tpl.sourceforge.net/">tpl</a> and
+  <a href="http://uthash.sourceforge.net/">uthash</a> projects (the HTML versions
+  have a customised contents sidebar).
 </p>
 </li>
 <li>
 <p>
-<a href="https://weechat.org/">WeeChat</a> uses AsciiDoc for
-  <a href="https://weechat.org/doc/">project documentation</a>.
+<a href="http://volnitsky.com/">Leonid Volnitsky&#8217;s site</a> is generated using
+  AsciiDoc and includes Leonid&#8217;s matplotlib filter.
 </p>
 </li>
 <li>
 <p>
-<a href="https://github.com/Clansuite/Clansuite">Clansuite</a> uses AsciiDoc for
-  project documentation.
+<a href="http://www.weechat.org/">WeeChat</a> uses AsciiDoc for
+  <a href="http://www.weechat.org/doc">project documentation</a>.
 </p>
 </li>
 <li>
 <p>
-The <a href="https://github.com/shlomif/fc-solve">Freecell Solver program</a> uses
+<a href="http://www.clansuite.com/">Clansuite</a> uses AsciiDoc for
+  <a href="http://www.clansuite.com/documentation/">project documentation</a>.
+</p>
+</li>
+<li>
+<p>
+The <a href="http://fc-solve.berlios.de/">Freecell Solver program</a> uses
   AsciiDoc for its
-  <a href="https://fc-solve.shlomifish.org/">distributed documentation</a>.
+  <a href="http://fc-solve.berlios.de/docs/#distributed-docs">distributed
+  documentation</a>.
 </p>
 </li>
 <li>
@@ -716,14 +788,28 @@ Eric Raymond&#8217;s <a href="http://gpsd.berlios.de/AIVDM.html">AIVDM/AIVDO
 </li>
 <li>
 <p>
+Dwight Schauer has written an <a href="http://lxc.teegra.net/">LXC HOWTO</a> in
+  AsciiDoc.
+</p>
+</li>
+<li>
+<p>
+The <a href="http://www.rowetel.com/ucasterisk/">Free Telephony Project</a>
+  website is generated using AsciiDoc.
+</p>
+</li>
+<li>
+<p>
 Warren Block has <a href="http://www.wonkity.com/~wblock/docs/">posted a
   number of articles written using AsciiDoc</a>.
 </p>
 </li>
 <li>
 <p>
-The <a href="https://gitlab.com/ita1024/waf/">Waf project&#8217;s</a>
-  <a href="https://waf.io/book/"><em>Waf Book</em></a> is written using AsciiDoc.
+The <a href="http://code.google.com/p/waf/">Waf project&#8217;s</a> <em>Waf Book</em> is
+  written using AsciiDoc, there is an
+  <a href="http://waf.googlecode.com/svn/docs/wafbook/single.html">HTML</a> and a
+  <a href="http://waf.googlecode.com/svn/docs/wafbook/waf.pdf">PDF</a> version.
 </p>
 </li>
 <li>
@@ -777,8 +863,7 @@ Suraj Kurapati has written a number of customized manuals for his
 <li>
 <p>
 The <a href="http://cxxtest.com/">CxxTest</a> project (unit testing for C++
-  language) has written its
-  <a href="http://cxxtest.com/guide.html">User Guide</a> using AsciiDoc.
+  language) has written its User Guide using AsciiDoc.
 </p>
 </li>
 <li>
@@ -788,6 +873,7 @@ The <a href="https://docs.fedoraproject.org/">Fedora Docs</a>
 </p>
 </li>
 </ul></div>
+<div class="paragraph"><p>Please let me know if any of these links need updating.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -795,7 +881,7 @@ The <a href="https://docs.fedoraproject.org/">Fedora Docs</a>
 <div class="sectionbody">
 <div class="paragraph"><p>An experimental LaTeX backend was written for AsciiDoc in 2006 by
 Benjamin Klum.  Benjamin did a superhuman job (I admit it, I didn&#8217;t
-think this was doable due to AsciiDoc&#8217;s SGML/XML bias).  Due to
+think this was doable due to AsciiDoc&#8217;s SGML/XML bias).  Owning to to
 other commitments, Benjamin was unable to maintain this backend.
 Here&#8217;s <a href="latex-backend.html">Benjamin&#8217;s original documentation</a>.
 Incompatibilities introduced after AsciiDoc 8.2.7 broke the LaTeX
@@ -895,9 +981,8 @@ Include documentation updates if you&#8217;re up to it; otherwise insert
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Version 9.1.0<br />
-Last updated 2021-02-11 01:55:44 UTC<br />
-AsciiDoc is a trademark of the Eclipse Foundation, Inc.
+Version 9.0.0<br />
+Last updated 2021-02-12 01:50:15 UTC
 </div>
 <div id="footer-badges">
 <a href="https://validator.w3.org/check?uri=referer">

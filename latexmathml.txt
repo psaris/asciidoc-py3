@@ -1,20 +1,20 @@
 LaTeXMathML Formulae
 ====================
 
-https://www.maths.nottingham.ac.uk/plp/pmadw/lm.html[LaTeXMathML]
+http://www.maths.nottingham.ac.uk/personal/drw/lm.html[LaTeXMathML]
 capability has been added to AsciiDoc for users who are more familar
 with or prefer LaTeX math formulas to the
-https://asciidoc.org/asciimath.html[ASCIIMath]
+https://asciidoc.org/asciimathml.html[ASCIIMathML]
 notation.
 
 'LaTeXMathML' is a derivative of
-https://asciidoc.org/asciimath.html[ASCIIMath] -- in
+https://asciidoc.org/asciimathml.html[ASCIIMathML] -- in
 terms of usage the only difference it that you use the `latexmath`
 attribute instead of the `asciimath` attribute.
 
 'LaTeXMathML' processes LaTeX math formulas not arbitrary LaTeX (as
 `dblatex(1)` does). See the
-https://www.maths.nottingham.ac.uk/plp/pmadw/lm.html[LaTeXMathML]
+http://www.maths.nottingham.ac.uk/personal/drw/lm.html[LaTeXMathML]
 website for details.
 
 Here's the link:latexmathml.txt[AsciiDoc source] that generated this

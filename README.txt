@@ -2,7 +2,7 @@
 AsciiDoc
 ========
 
-image:https://github.com/asciidoc/asciidoc-py3/workflows/Test/badge.svg?branch=master["Build Status", link="https://github.com/asciidoc/asciidoc-py3/actions?query=workflow%3ATest+branch%3Amaster"]
+image:https://travis-ci.com/asciidoc/asciidoc-py3.svg?branch=master["Build Status", link="https://travis-ci.com/asciidoc/asciidoc-py3"]
 
 AsciiDoc is a text document format for writing notes, documentation,
 articles, books, ebooks, slideshows, web pages, man pages and blogs.
@@ -18,7 +18,7 @@ Prerequisites
 AsciiDoc is written in Python so you need a Python interpreter
 (version 3.5 or later) to execute asciidoc(1). Python is installed by
 default in most Linux distributions.  You can download Python from the
-official Python website https://www.python.org/.
+official Python website http://www.python.org.
 
 
 Obtaining AsciiDoc
@@ -49,5 +49,3 @@ Copyright (C) 2013-2020 AsciiDoc Contributors.
 
 Free use of this software is granted under the terms of the GNU General
 Public License version 2 (GPLv2).
-
-AsciiDoc is a trademark of the Eclipse Foundation, Inc.

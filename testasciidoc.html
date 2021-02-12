@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 10.0.0a2" />
+<meta name="generator" content="AsciiDoc 9.0.0" />
 <title>AsciiDoc Tests</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 <link rel="stylesheet" href="./layout2.css" type="text/css" />
@@ -266,16 +266,11 @@ AsciiDoc source file name.
 
 % backends
 Optional list of backends to be tested(default is all backends).
-
 % options
 Optional list of command-line option tuples.
 
 % attributes
-Optional dictionary of attribute values.
-
-% artifacts
-Optional list of artifacts that get generated from test, and which
-will get cleaned up.</code></pre>
+Optional dictionary of attribute values.</code></pre>
 </div></div>
 <div class="paragraph"><p>Example test spec:</p></div>
 <div class="listingblock">
@@ -365,15 +360,6 @@ The <code>requires</code> directive data specifies a Python list of strings
   in that test.
 </p>
 </li>
-<li>
-<p>
-The <code>artifacts</code> directive data specifies a Python list of strings
-  which corresponds to the list of files (usually image or other such
-  files) that get generated when asciidoc is run over the input file.
-  The files are deleted after the test is for a given source file is
-  run for all backends.
-</p>
-</li>
 </ul></div>
 </div>
 <div class="sect2">
@@ -401,9 +387,8 @@ directory).</p></div>
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Version 9.1.0<br />
-Last updated 2021-02-11 01:55:52 UTC<br />
-AsciiDoc is a trademark of the Eclipse Foundation, Inc.
+Version 9.0.0<br />
+Last updated 2021-02-12 01:50:24 UTC
 </div>
 <div id="footer-badges">
 <a href="https://validator.w3.org/check?uri=referer">

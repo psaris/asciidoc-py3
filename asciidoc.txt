@@ -1,6 +1,7 @@
 AsciiDoc User Guide
 ===================
-AsciiDoc.py Team
+Stuart Rackham <srackham@gmail.com>
+:Author Initials: SJR
 :toc:
 :icons:
 :numbered:
@@ -13,15 +14,6 @@ HTML, PDF, EPUB, man page.  AsciiDoc is highly configurable: both the
 AsciiDoc source file syntax and the backend output markups (which can
 be almost any type of SGML/XML markup) can be customized and extended
 by the user.
-
-[WARNING]
-This user guide is for AsciiDoc.py, which is a legacy processor for
-this syntax, handling an older rendition of AsciiDoc. As such, this
-will not properly handle the
-https://projects.eclipse.org/projects/technology.asciidoc[current AsciiDoc specification].
-It is suggested that unless you specifically require the AsciiDoc.py
-toolchain, you should find a processor that handles the modern
-AsciiDoc syntax.
 
 .This document
 **********************************************************************
@@ -185,14 +177,14 @@ html5::
 
 slidy::
   Use this backend to generate self-contained
-  https://www.w3.org/Talks/Tools/Slidy2[Slidy] HTML slideshows for
+  http://www.w3.org/Talks/Tools/Slidy2/[Slidy] HTML slideshows for
   your web browser from AsciiDoc documents. The Slidy backend is
   documented in the distribution `doc/slidy.txt` file and
   {website}slidy.html[online].
 
 wordpress::
   A minor variant of the 'html4' backend to support
-  https://srackham.wordpress.com/blogpost1/[blogpost].
+  http://srackham.wordpress.com/blogpost1/[blogpost].
 
 latex::
   Experimental LaTeX backend.
@@ -234,7 +226,7 @@ backend <<X101,plugins>>.
 DocBook
 -------
 AsciiDoc generates 'article', 'book' and 'refentry'
-https://docbook.org/[DocBook] documents (corresponding to the
+http://www.docbook.org/[DocBook] documents (corresponding to the
 AsciiDoc 'article', 'book' and 'manpage' document types).
 
 Most Linux distributions come with conversion tools (collectively
@@ -242,9 +234,8 @@ called a toolchain) for <<X12,converting DocBook files>> to
 presentation formats such as Postscript, HTML, PDF, EPUB, DVI,
 PostScript, LaTeX, roff (the native man page format), HTMLHelp,
 JavaHelp and text.  There are also programs that allow you to view
-DocBook files directly, for example
-https://wiki.gnome.org/action/show/Apps/Yelp[Yelp] (the GNOME help
-viewer).
+DocBook files directly, for example http://live.gnome.org/Yelp[Yelp]
+(the GNOME help viewer).
 
 [[X12]]
 Converting DocBook to other file formats
@@ -353,7 +344,7 @@ AsciiDoc::
   uses <<X13,DocBook XSL Stylesheets>>, <<X40,xsltproc(1)>> and
   `latex(1)`.
 
-[[X14]]https://xmlgraphics.apache.org/fop/[FOP]::
+[[X14]]http://xmlgraphics.apache.org/fop/[FOP]::
   The Apache Formatting Objects Processor converts XSL-FO (`.fo`)
   files to PDF files.  The XSL-FO files are generated from DocBook
   source files using <<X13,DocBook XSL Stylesheets>> and
@@ -363,7 +354,7 @@ AsciiDoc::
   The Microsoft HTML Help Compiler (`hhc.exe`) is a command-line tool
   that converts HTML Help source files to a single HTML Help (`.chm`)
   file. It runs on MS Windows platforms and can be downloaded from
-  https://www.microsoft.com/.
+  http://www.microsoft.com.
 
 AsciiDoc dblatex configuration files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1040,7 +1031,7 @@ outputs. The CSS class names are:
   decorators.
 
 Where '<color>' can be any of the
-https://en.wikipedia.org/wiki/Web_colors#HTML_color_names[sixteen HTML
+http://en.wikipedia.org/wiki/Web_colors#HTML_color_names[sixteen HTML
 color names].  Examples:
 
   [red]#Obvious# and [big red yellow-background]*very obvious*.
@@ -1321,7 +1312,7 @@ block the second attribute value in the AttributeList is quoted to
 ensure the 'http' macro is expanded to a hyperlink.
 
 ---------------------------------------------------------------------
-[quote,'https://en.wikipedia.org/wiki/Samuel_Johnson[Samuel Johnson]']
+[quote,'http://en.wikipedia.org/wiki/Samuel_Johnson[Samuel Johnson]']
 _____________________________________________________________________
 Sir, a woman's preaching is like a dog's walking on his hind legs. It
 is not done well; but you are surprised to find it done at all.
@@ -2474,7 +2465,7 @@ list'.  The usual syntax is `<name>:<target>[<attrlist>]` (for
 inline macros) and `<name>::<target>[<attrlist>]` (for block
 macros).  Here are some examples:
 
-  https://docbook.org/[DocBook.org]
+  http://www.docbook.org/[DocBook.org]
   include::chapt1.txt[tabsize=2]
   mailto:srackham@gmail.com[]
 
@@ -2518,16 +2509,16 @@ rendered using predefined inline macros.
 
 Here are some examples:
 
-  https://docbook.org/[DocBook.org]
-  https://docbook.org/
+  http://www.docbook.org/[DocBook.org]
+  http://www.docbook.org/
   mailto:joe.bloggs@foobar.com[email Joe Bloggs]
   joe.bloggs@foobar.com
 
 Which are rendered:
 
-https://docbook.org/[DocBook.org]
+http://www.docbook.org/[DocBook.org]
 
-https://docbook.org/
+http://www.docbook.org/
 
 mailto:joe.bloggs@foobar.com[email Joe Bloggs]
 
@@ -2633,7 +2624,7 @@ referring document.
 - The optional 'alt' attribute is also the first positional attribute,
   it specifies alternative text which is displayed if the output
   application is unable to display the image file (see also
-  https://htmlhelp.com/feature/art3.htm[Use of ALT texts in IMGs]). For
+  http://htmlhelp.com/feature/art3.htm[Use of ALT texts in IMGs]). For
   example:
 
   image:images/logo.png[Company Logo]
@@ -2745,7 +2736,7 @@ A title prefix that can be inserted with the `caption` attribute
 *********************************************************************
 If you define the `data-uri` attribute then images will be embedded in
 XHTML outputs using the
-https://en.wikipedia.org/wiki/Data_URI_scheme[data URI scheme].  You
+http://en.wikipedia.org/wiki/Data:_URI_scheme[data URI scheme].  You
 can use the 'data-uri' attribute with the 'xhtml11' and 'html5'
 backends to produce single-file XHTML documents with embedded images
 and CSS, for example:
@@ -2826,12 +2817,7 @@ headers.  Example:
   does not process nested includes). Setting 'depth' to '1' disables
   nesting inside the included file. By default, nesting is limited to
   a depth of ten.
-- The `lines` macro attribute can be used to include specific lines of
-  the file. You can specify a range of pages by using `..` between
-  the two numbers, for example `1..10` would include the first 10
-  lines. You can include multiple ranges or invdividual pages by using
-  a comma or semi-colon, for example `1..10,45,50..60`.
-- If the 'warnings' attribute is set to 'False' (or any other
+- If the he 'warnings' attribute is set to 'False' (or any other
   Python literal that evaluates to boolean false) then no warning
   message is printed if the included file does not exist. By default
   'warnings' are enabled.
@@ -2963,7 +2949,7 @@ asciimath, latexmath::
   characters and you can prefix with quoted attributes in the inline
   version. Example:
 
-  Red [red]+++`sum_(i=1)\^n i=(n(n+1))/2`$+++ AsciiMath formula
+  Red [red]+++`sum_(i=1)\^n i=(n(n+1))/2`$+++ AsciiMathML formula
 
 $$::
   Inline and block. The double-dollar passthrough is functionally
@@ -3656,7 +3642,7 @@ refmiscinfo attributes
 ~~~~~~~~~~~~~~~~~~~~~~
 In addition to the automatically created man page <<X60,intrinsic
 attributes>> you can assign DocBook
-https://tdg.docbook.org/tdg/4.5/refmiscinfo.html[refmiscinfo]
+http://www.docbook.org/tdg5/en/html/refmiscinfo.html[refmiscinfo]
 element 'source', 'version' and 'manual' values using AsciiDoc
 `{mansource}`, `{manversion}` and `{manmanual}` attributes
 respectively. This example is from the AsciiDoc header of a man page
@@ -3688,7 +3674,7 @@ distributed `doc/latexmath.txt` file.
 
 MathJax
 ~~~~~~~
-https://www.mathjax.org/[MathJax] allows LaTeX Math style formulas to be included
+http://www.mathjax.org/[MathJax] allows LaTeX Math style formulas to be included
 in XHTML documents generated via the AsciiDoc 'xhtml11' and 'html5' backends.
 This route overcomes several restrictions of the MathML-based approaches,
 notably, restricted support of MathML by many mainstream browsers. To enable
@@ -3701,7 +3687,7 @@ you are offline (but it can be configured differently).
 LaTeXMathML
 ~~~~~~~~~~~
 /////////////////////////////////////////////////////////////////////
-There is an https://math.etsu.edu/LaTeXMathML/[extended LaTeXMathML
+There is an http://math.etsu.edu/LaTeXMathML/[extended LaTeXMathML
 version] by Jeff Knisley, in addition to a JavaScript file it requires
 the inclusion of a CSS file.
 /////////////////////////////////////////////////////////////////////
@@ -3709,9 +3695,9 @@ the inclusion of a CSS file.
 'LaTeXMathML' allows LaTeX Math style formulas to be included in XHTML
 documents generated using the AsciiDoc 'xhtml11' and 'html5' backends.
 AsciiDoc uses the
-https://www.maths.nottingham.ac.uk/plp/pmadw/lm.html[original
+http://www.maths.nottingham.ac.uk/personal/drw/lm.html[original
 LaTeXMathML] by Douglas Woodall.  'LaTeXMathML' is derived from
-ASCIIMath and is for users who are more familiar with or prefer
+ASCIIMathML and is for users who are more familiar with or prefer
 using LaTeX math formulas (it recognizes a subset of LaTeX Math, the
 differences are documented on the 'LaTeXMathML' web page).  To enable
 LaTeXMathML support you must define the 'latexmath' attribute, for
@@ -3733,30 +3719,30 @@ apply to 'MathJax' which does not use any of the 'latexmath' macros
 (but only requires the 'latexmath' passthrough blocks for identification
 of the equations).
 
-ASCIIMath
+ASCIIMathML
 ~~~~~~~~~~~
 /////////////////////////////////////////////////////////////////////
-The older ASCIIMath 1.47 version is used instead of version 2
+The older ASCIIMathML 1.47 version is used instead of version 2
 because:
 
 1. Version 2 doesn't work when embedded.
 2. Version 2 is much larger.
 /////////////////////////////////////////////////////////////////////
 
-http://asciimath.org/[ASCIIMath] formulas can be included in XHTML
-documents generated using the 'xhtml11' and 'html5' backends. To enable
-ASCIIMath support you must define the 'asciimath' attribute, for
-example using the `-a asciimath` command-line option.  Example inline
-formula:
+http://www1.chapman.edu/~jipsen/mathml/asciimath.html[ASCIIMathML]
+formulas can be included in XHTML documents generated using the
+'xhtml11' and 'html5' backends. To enable ASCIIMathML support you must
+define the 'asciimath' attribute, for example using the `-a asciimath`
+command-line option.  Example inline formula:
 
   asciimath:[`x/x={(1,if x!=0),(text{undefined},if x=0):}`]
 
 For more examples see the {website}[AsciiDoc website] or the
-distributed `doc/asciimath.txt` file.
+distributed `doc/asciimathml.txt` file.
 
 MathML
 ~~~~~~
-https://www.w3.org/Math/[MathML] is a low level XML markup for
+http://www.w3.org/Math/[MathML] is a low level XML markup for
 mathematics. AsciiDoc has no macros for MathML but users familiar with
 this markup could use passthrough macros and passthrough blocks to
 include MathML in output documents.
@@ -4332,8 +4318,8 @@ compounded by redundancy if the same name is used repeatedly.
 Attribute entries can be used to make your documents easier to read
 and write, here are some examples:
 
-  :1:         http://freshmeat.sourceforge.net/projects/asciidoc/
-  :homepage:  https://asciidoc.org[AsciiDoc home page]
+  :1:         http://freshmeat.net/projects/asciidoc/
+  :homepage:  http://asciidoc.org[AsciiDoc home page]
   :new:       image:./images/smallnew.png[]
   :footnote1: footnote:[A meaningless latin term]
 
@@ -4726,7 +4712,7 @@ predefined intrinsic attributes:
    the standard output then `{docname}` is the output file name sans
    file extension.
 7. See
-   https://en.wikipedia.org/wiki/Quotation_mark#Summary_table[non-English
+   http://en.wikipedia.org/wiki/Non-English_usage_of_quotation_marks[non-English
    usage of quotation marks].
 8. The `{blockname}` attribute identifies the style of the current
    block. It applies to delimited blocks, lists and tables. Here is a
@@ -5122,7 +5108,7 @@ The AsciiDoc distribution includes 'source', 'music', 'latex' and
 |music
 |A {website}music-filter.html[music filter] is included in the
 distribution `./filters/` directory. It translates music in
-https://lilypond.org/[LilyPond] or https://abcnotation.com/[ABC]
+http://lilypond.org/[LilyPond] or http://abcnotation.org.uk/[ABC]
 notation to standard classical notation.
 
 |source
@@ -5135,7 +5121,7 @@ LaTeX source to an image that is automatically inserted into the
 AsciiDoc output documents.
 
 |graphviz
-|Gouichi Iisaka has written a https://www.graphviz.org/[Graphviz]
+|Gouichi Iisaka has written a http://www.graphviz.org/[Graphviz]
 filter for AsciiDoc.  Graphviz generates diagrams from a textual
 specification. Gouichi Iisaka's Graphviz filter is included in the
 AsciiDoc distribution. Here are some
@@ -5254,7 +5240,7 @@ Execute `:help gq` command to read about the vim gq command.
   available (see the <<X61, Example `~/.vimrc` file>>).
 - Put `set` commands in your `~/.vimrc` file so you don't have to
   enter them manually.
-- The Vim website (https://www.vim.org/) has a wealth of resources,
+- The Vim website (http://www.vim.org) has a wealth of resources,
   including scripts for automated spell checking and ASCII Art
   drawing.
 =====================================================================
@@ -5469,8 +5455,8 @@ liking you can:
    template sections. The `{empty}` attribute is useful for outputting
    trailing blank lines in markup templates.
 
-2. Use https://www.html-tidy.org/[HTML Tidy] program to tidy
-   asciidoc(1) output. Example:
+2. Use Dave Raggett's http://tidy.sourceforge.net/[HTML Tidy] program
+   to tidy asciidoc(1) output. Example:
 
    $ asciidoc -b docbook -o - mydoc.txt | tidy -indent -xml >mydoc.xml
 
@@ -5570,7 +5556,7 @@ it will be fetched from its Internet location. If you omit the
 `--valid` option the document will only be checked that it is well
 formed.
 
-The online https://validator.w3.org/#validate_by_uri+with_options[W3C
+The online http://validator.w3.org/#validate_by_uri+with_options[W3C
 Markup Validation Service] is the defacto standard when it comes to
 validating HTML (it validates all HTML standards including HTML5).
 
@@ -5703,13 +5689,16 @@ Syntax highlighting is incredibly useful, in addition to making
 reading AsciiDoc documents much easier syntax highlighting also helps
 you catch AsciiDoc syntax errors as you write your documents.
 
-If you use the Vim editor, it comes with an
-https://github.com/vim/vim/blob/master/runtime/syntax/asciidoc.vim[AsciiDoc
-syntax highlighter pre-included]. By default, it will activate for
-files that use the .asciidoc or .adoc file extensions.
+The AsciiDoc distribution directory contains a Vim syntax highlighter
+for AsciiDoc (`./vim/syntax/asciidoc.vim`), you can find the latest
+version in the online
+https://code.google.com/p/asciidoc/source/browse/[AsciiDoc
+repository].
 
-Alternatively, to enable syntax highlighting for the current document or
-other extensions:
+Install the highlighter by copying `asciidoc.vim` to your
+`$HOME/.vim/syntax` directory (create it if it doesn't already exist).
+
+To enable syntax highlighting:
 
 - Put a Vim 'autocmd' in your Vim configuration file (see the
   <<X61,example vimrc file>>).
@@ -5888,7 +5877,7 @@ Embed images using the <<X66,data: uri scheme>>.
 Set a 'CSS signature' for the document (sets the 'id' attribute of the
 HTML 'body' element). CSS signatures provide a mechanism that allows
 users to personalize the document appearance. The term 'CSS signature'
-was https://juicystudio.com/article/css-selectors.php[coined by
+was http://archivist.incutio.com/viewlist/css-discuss/13291[coined by
 Eric Meyer].
 
 
